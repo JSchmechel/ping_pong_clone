@@ -1,7 +1,14 @@
 #include <iostream>
-
-#include "hello.hpp"
+#include <ncurses.h>
 
 int main() {
-    std::cout << "This will become a ping-pong clone!\n";
+    // The following sequence of commands was taken from an ncurses
+    // tutorial.
+    initscr();
+    printw("This will become a ping-pong clone!");
+    refresh();
+    getch();
+    endwin();
+
+    return 0;
 }
