@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
 project(ping_pong VERSION 1.0.0)
 
-add_executable(ping_pong ping_pong.cpp)
+add_subdirectory(apps/)
+add_subdirectory(libs/)
