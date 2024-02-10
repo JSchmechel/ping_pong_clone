@@ -1,1 +1,1 @@
-add_subdirectory(hello/)
+add_subdirectory(alternate_screen_api/)

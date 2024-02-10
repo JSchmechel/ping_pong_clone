@@ -1,0 +1,3 @@
+add_library(alternate_screen_api alternate_screen_api.cpp alternate_screen_api.hpp)
+target_include_directories(alternate_screen_api PUBLIC ${CMAKE_CURRENT_LIST_DIR})
+target_link_libraries(alternate_screen_api -lncurses)

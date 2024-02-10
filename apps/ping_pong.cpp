@@ -1,14 +1,15 @@
 #include <iostream>
-#include <ncurses.h>
+
+#include "alternate_screen_api.hpp"
 
 int main() {
-    // The following sequence of commands was taken from an ncurses
-    // tutorial.
-    initscr();
-    printw("This will become a ping-pong clone!");
-    refresh();
-    getch();
-    endwin();
+
+    // At the moment I am just toying around with ncurses.
+    // The following lines call functions which try out
+    // different features of the ncurses-API.
+
+    alternate_screen_api::say_hello_world();
 
     return 0;
+
 }
